@@ -1,0 +1,8 @@
+<p>image-gallery works!</p>
+<div>
+    <kendo-scrollview [data]="items" [width]="width" [height]="height" [arrows]="true" [pageable]="true">
+      <ng-template let-item="item">
+        <img src='{{item.url}}' alt='{{item.title}}' [ngStyle]="{minWidth: width}" draggable="false" />
+      </ng-template>
+    </kendo-scrollview>
+  </div>
